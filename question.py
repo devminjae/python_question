@@ -10,14 +10,14 @@ class map_class:
 		variable1 = self.variable1
 		return variable1 + '_extended'
 
-def createDF(self, ):
-	variable2 = self.variable2
-	v_df = pd.read_cvs(variable2+'.csv')
-	return v_df
+	def createDF(self, ):
+		variable2 = self.variable2
+		v_df = pd.read_cvs(variable2+'.csv')
+		return v_df
 
-def createImg(self, ):
-	import numpy as np
-	from matplotlib import pyplot as plt
-	plt.scatter(self.variable_df['X'], self.variable_df['Y'])
-	plt.savefig(variable1+'.png')
-	print('image is generated')
+	def createImg(self, ):
+		import numpy as np
+		from matplotlib import pyplot as plt
+		plt.scatter(self.variable_df['X'], self.variable_df['Y'])
+		plt.savefig(variable1+'.png')
+		print('image is generated')
