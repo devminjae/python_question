@@ -12,7 +12,7 @@ class map_class:
 
 	def createDF(self, ):
 		variable2 = self.variable2
-		v_df = pd.read_cvs(variable2+'.csv')
+		v_df = pd.read_csv(variable2+'.csv')
 		return v_df
 
 	def createImg(self, ):
